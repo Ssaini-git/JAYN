@@ -1,0 +1,11 @@
+<template>
+    <c-streaming-api-component objectname={objectApiName}></c-streaming-api-component>
+    <div>
+        <div if:true={isLogin}>
+            <c-log-in-page onmyevent={handleEventListner}></c-log-in-page>
+        </div>
+        <div if:true={isReport} >
+            <c-health-report oapiname={objectApiName} recordid={recordId}></c-health-report>
+        </div>
+    </div>
+</template>

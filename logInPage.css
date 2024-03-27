@@ -1,0 +1,28 @@
+.my-button {
+    background-color: #00a1e0;
+    color: #ffffff;
+    border-color: #00a1e0;
+    margin-top: 10px;
+    height: 42px;
+}
+.logininput label {
+    padding: 0px 0px 5px;
+    margin: 0px;
+    display: block;
+}
+.logininput input {
+    height: 42px;
+    width: 100%;
+    border-radius: 5px;
+    border: solid 1px #c9c9c9;
+    padding: 0px 10px;
+    line-height: 42px;
+}
+.exampleHolder{
+    position: center;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    
+}

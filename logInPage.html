@@ -1,0 +1,20 @@
+<template>
+    <lightning-card>
+        <div class="login-form-bx" style="padding:10px 15px 20px;">
+            <div class="slds-text-heading_medium" style="text-align:left; padding-bottom: 15px;"><strong>Login to Customer City</strong> </div>
+            <div class="exampleHolder" if:true={isLoad}>
+                <lightning-spinner alternative-text="Loading" size="xx-medium"></lightning-spinner>
+            </div>
+            <div class="logininput slds-p-bottom_small">
+                <label>Username</label>
+                    <input class=" slds-p-bottom_small" type="text" placeholder="Username..."  name="username" onchange={handleChangeUsername}></input>
+            </div>
+            <div class="logininput slds-p-bottom_small">
+                <label>Password</label>
+                <input class="logininput " type="password" placeholder="Password..." name="password" onchange={handleChangepassword}></input>
+            </div>
+            <button class="slds-button slds-button_stretch my-button" onclick={checkCredintial}>Verify User</button>
+        </div>
+        
+    </lightning-card>
+</template>
